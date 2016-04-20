@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="static/styles/index.css" rel="stylesheet">
+	<link href="static/styles/metro.css" rel="stylesheet">
+	<link href="static/styles/metro-icons.css" rel="stylesheet">
+	<link href="static/styles/metro-responsive.css" rel="stylesheet">
+	<link href="static/styles/metro-schemes.css" rel="stylesheet">
+	<link href="static/styles/chat-window.css" rel="stylesheet">
+
+	<script src="static/scripts/jquery-2.1.3.min.js"></script>
+	<script src="static/scripts/socket.io-1.4.5.js"></script>
+	<script src="static/scripts/metro.js"></script>
+	<script src="static/scripts/chat-home.js"></script>
+</head>
+<body>
+	<div class="grid condensed">
+		<div id="main-content" class="row cells5">
+
+			<div id="left-panel" class="cell">
+				<div class="panel">
+					<div class="heading">
+						<span class="title">
+							<span class="mif-bubbles"></span>
+						</span>
+					</div>
+					<div class="heading bg-lighterBlue user-bar" data-user-id="user1" data-user-name="user1">
+						<span class="title minor-header">
+							<span class="mif-user fg-cyan"></span>
+							user1
+						</span>
+					</div>
+					<div class="heading bg-lighterBlue user-bar" data-user-id="user2" data-user-name="user2">
+						<span class="title minor-header">
+							<span class="mif-user fg-cyan"></span>
+							user2
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="right-panel" class="cell colspan4">
+				<div class="panel">
+					<!-- <div class="heading">
+						<span class="icon mif-user rounded"></span>
+						<span class="title">Panel Title</span>
+					</div>
+					<div id="messages-window" class="content" >
+						<div class="bubble me">Hello there!</div>
+						<div class="bubble other">Hi. I'm an expandeable chat box with box shadow. How are you? I expand horizontally and vertically, as you can see here.</div>
+						<div class="bubble me">Awesome.</div>
+						<div class="bubble me" style="display:block;">Awesome.</div>
+
+
+					</div>
+ -->
+				</div>
+			</div>
+		</div>
+
+		<div id="chat-type-window" class="row cells5">
+			<div class="cell">
+			</div>
+			<div class="cell colspan4">
+				<div class="grid condensed">
+					<div class="row cells12">
+						<div class="cell colspan11">
+							<textarea id="user-text-window" rows=3; style="width:100%;"></textarea>
+						</div>
+						<div class="cell align-center v-align-middle">
+							<button id="send-message-button" class="cycle-button bg-lighterBlue">
+								<span class="icon mif-paper-plane"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,18 @@
+#main-content{
+	width: 99%;
+	margin-left: 0.5%;
+	
+}
+
+#left-panel{
+	height: 600px;
+}
+
+#right-panel{
+	height: 600px;
+	background-image: url("../images/chat-bg.jpg")
+}
+.user-bar{
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
